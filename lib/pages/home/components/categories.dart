@@ -25,9 +25,7 @@ class Category extends StatelessWidget {
   Widget buildCategory(int index) {
     final HomeController controller = Get.put(HomeController());
     return GestureDetector(
-      onTap: () {
-        controller.changeIndex(index);
-      },
+      onTap: controller.changeIndex(index),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: kDefaultPaddin),
         child: Column(

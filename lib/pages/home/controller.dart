@@ -2,11 +2,11 @@ import 'package:get/get.dart';
 
 class HomeController extends GetxController {
   List<String> categories = ["Hand bag", "Jewellery", "Footwear", "Dresses"];
-  int selectedIndex =0;
+  var selectedIndex = 1.obs;
 
   
-  changeIndex(int values) {
-    selectedIndex = values;
+  changeIndex(int index) {
+    selectedIndex.value=index;
    
   }
 }
